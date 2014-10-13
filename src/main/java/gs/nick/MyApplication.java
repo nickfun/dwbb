@@ -20,6 +20,7 @@ public class MyApplication extends Application<MyConfig> {
 
     public void run(MyConfig config, Environment env) {
         env.jersey().register(new IndexResource());
+		env.lifecycle().manage(new TimerManager());
     }
 
 }
