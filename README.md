@@ -1,4 +1,24 @@
-dwbb
-====
+# dwbb
 
 An example project using Dropwizard to serve a Backbone application
+
+## Project
+
+Build a simple clone of futureme.com, a website that lets a user submit an email to be sent at a later date.
+
+This project will run through the creation and development of a Dropwizard based server. The front-end code will be a rich client written in javascript with the Backbone framework. It might use the Marionette framework too, I haven't gotten that far yet.
+
+## Goals
+
+This will serve as an example application for those looking to build a "modern" web app using Dropwizard. If you follow along, you should know how to do the following:
+
+* Basic setup of maven for Dropwizard
+* How dropwizard deals with routing URLs
+* Serving HTML pages that are styled with Freemarker templates
+* Serving javascript with the dropwizard-assets plugin
+* use the Dropwizard lifecycle management system to keep an object around for the life of the application
+
+## Other Info
+
+As I build this up, I will post tutorials on my site [nick.gs](http://nick.gs/), check them out!
+
