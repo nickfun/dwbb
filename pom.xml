@@ -78,7 +78,7 @@
       </plugin>
 
       <plugin>
-        <!-- enable `mvn exec:java` to run our application from maven -->
+        <!-- use `mvn exec:java` to run our application from maven -->
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.2.1</version>
