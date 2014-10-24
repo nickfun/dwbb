@@ -23,7 +23,7 @@ public class TimerManager implements Managed {
 
 	@Override
 	public void start() throws Exception {
-		oTimer.schedule(oTask, 500, 500);
+		oTimer.schedule(oTask, 500, 2000);
 		oLog.info("START TIMER");
 	}
 

@@ -9,6 +9,9 @@ public class MyConfig extends Configuration {
     @NotEmpty
     private String template;
 
+    @NotEmpty
+    private int emailTimer;
+
     @JsonProperty
     public String getTemplate() {
         return template;
@@ -17,6 +20,16 @@ public class MyConfig extends Configuration {
     @JsonProperty
     public void setTemplate(String template) {
         this.template = template;
+    }
+
+    @JsonProperty
+    public void setEmailTimer(int timer) {
+        this.emailTimer = timer;
+    }
+
+    @JsonProperty
+    public int getEmailTimer() {
+        return this.emailTimer;
     }
 
 }
