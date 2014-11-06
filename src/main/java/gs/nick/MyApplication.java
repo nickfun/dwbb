@@ -3,10 +3,12 @@ package gs.nick;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import org.slf4j.LoggerFactory;
 
 public class MyApplication extends Application<MyConfig> {
 
     public static void main(String[] args) throws Exception {
+        LoggerFactory.getLogger(MyApplication.class).info("pre-start");
         new MyApplication().run(args);
     }
 

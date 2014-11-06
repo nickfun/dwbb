@@ -1,16 +1,18 @@
+
 package gs.nick;
 
 import io.dropwizard.Configuration;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.NotEmpty;
 
+
 public class MyConfig extends Configuration {
 
     @NotEmpty
     private String template;
 
-    @NotEmpty
-    private int emailTimer;
+
+    private Integer emailTimer;
 
     @JsonProperty
     public String getTemplate() {
@@ -23,12 +25,12 @@ public class MyConfig extends Configuration {
     }
 
     @JsonProperty
-    public void setEmailTimer(int timer) {
+    public void setEmailTimer(Integer timer) {
         this.emailTimer = timer;
     }
 
     @JsonProperty
-    public int getEmailTimer() {
+    public Integer getEmailTimer() {
         return this.emailTimer;
     }
 
