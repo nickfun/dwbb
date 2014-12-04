@@ -20,8 +20,6 @@ public class MyTimerTask extends java.util.TimerTask {
 	@Override
 	public void run() {
 		i++;
-		oLog.info("====");
-		oLog.info("====");
-		oLog.info(">>>> i is " + i);
+		oLog.info("i is " + i + ", I should check for email to be sent");
 	}
 }
