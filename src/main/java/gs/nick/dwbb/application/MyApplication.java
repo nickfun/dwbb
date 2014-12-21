@@ -1,8 +1,11 @@
-package gs.nick;
+package gs.nick.dwbb.application;
 
+import gs.nick.IndexResource;
+import gs.nick.TimerManager;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import io.dropwizard.views.ViewBundle;
 import org.slf4j.LoggerFactory;
 
 public class MyApplication extends Application<MyConfig> {
@@ -17,7 +20,7 @@ public class MyApplication extends Application<MyConfig> {
     }
 
     public void initialize(Bootstrap<MyConfig> bootstrap) {
-        // nothing
+        bootstrap.addBundle(new ViewBundle());
     }
 
     public void run(MyConfig config, Environment env) {

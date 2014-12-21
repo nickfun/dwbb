@@ -1,5 +1,5 @@
 
-package gs.nick;
+package gs.nick.dwbb.application;
 
 import io.dropwizard.Configuration;
 import com.fasterxml.jackson.annotation.JsonProperty;
