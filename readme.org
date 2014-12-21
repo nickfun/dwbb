@@ -23,3 +23,11 @@ This will serve as an example application for those looking to build a "modern" 
 
 As I build this up, I will post tutorials [[http://nick.gs/][on my site]], check them out!
 
+* Todo
+
+- [X] HTML output should be processed by FreeMarker
+- [ ] Setup a base.ftl file for common look ???
+- [ ] TimerTask should get its dealy from the config file
+- [ ] config file should be json instead of yaml
+- [ ] plan out database structure
+- [ ] understand dw migrations

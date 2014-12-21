@@ -11,5 +11,5 @@ server:
       port: 8081
 # my config settings
 template: hello
-emailTimer: 5000
+emailTimer: 3600000  #  (* 60 60 1000)
 
