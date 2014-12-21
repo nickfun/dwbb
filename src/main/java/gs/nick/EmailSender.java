@@ -1,10 +1,14 @@
 package gs.nick;
 
 import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 
 public class EmailSender {
 
+    private Logger log;
+
     public EmailSender() {
+        log = LoggerFactory.getLogger(EmailSender.class);
     }
 
     public boolean shouldSend() {
@@ -12,6 +16,6 @@ public class EmailSender {
     }
 
     public void send() {
-        LoggerFactory.getLogger(EmailSender.class).info("Sending Email...");
+        log.info("Sending Email...");
     }
 }
